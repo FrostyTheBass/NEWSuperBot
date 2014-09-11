@@ -35,7 +35,7 @@
 
     var loadChat = function(cb){
         if(!cb) cb = function(){};
-        $.get("https://rawgit.com/Yemasthui/basicBot/master/lang/langIndex.json", function(json){
+        $.get("https://raw.githubusercontent.com/FrostyTheBass/NEWSuperBot/master/lang/langIndex.json", function(json){
             var link = basicBot.chatLink;
             if(json !== null && typeof json !== "undefined"){
                 langIndex = json;
@@ -121,7 +121,7 @@
 
     };
 
-    var botCreator = "Matthew aka. Yemasthui . Edited by : Mr. Frosty TheBass";
+    var botCreator = "Edited by : Mr. Frosty TheBass";
     var botCreatorIDs = " [3930014] [3998944] ";
 
     var basicBot = {
@@ -129,16 +129,16 @@
         status: false,
         name: "NEW SuperBot",
         loggedInID: null,
-        scriptLink: "https://raw.githubusercontent.com/FrostyTheBass/NewSuperBot/master/NEWSuperBot.js",
+        scriptLink: "https://raw.githubusercontent.com/FrostyTheBass/NEWSuperBot/master/NewSuperBot.js",
         cmdLink: "http://git.io/245Ppg",
-        chatLink: "https://raw.githubusercontent.com/FrostyTheBass/NewSuperBot/master/pt.json",
+        chatLink: "https://raw.githubusercontent.com/FrostyTheBass/NEWSuperBot/master/lang/pt.json",
         chat: null,
         loadChat: loadChat,
         retrieveSettings: retrieveSettings,
         settings: {
             botName: "NEW SuperBot",
             language: "portuguese",
-            chatLink: "https://raw.githubusercontent.com/FrostyTheBass/NewSuperBot/master/pt.json",
+            chatLink: "https://raw.githubusercontent.com/FrostyTheBass/NEWSuperBot/master/lang/pt.json",
             maximumAfk: 120,
             afkRemoval: false,
             maximumDc: 120,
